@@ -1,0 +1,700 @@
+.priceFixer .profile-link a,
+.priceFixer .character-name {
+  color: orange !important;
+}
+
+.blacklisted .profile-link a,
+.blacklisted .character-name,
+.blacklisted > h1:nth-of-type(1),
+.blacklisted > h2:nth-of-type(1) {
+  color: rgb(236, 79, 51) !important;
+}
+
+.blacklisted > h1:nth-of-type(1),
+.blacklisted > h2:nth-of-type(1) {
+  color: rgb(236, 79, 51) !important;
+  display: flex;
+  align-items: center;
+}
+
+.blacklisted > h1 > svg,
+.blacklisted > h2 > svg {
+  margin: 0px 3px;
+  max-width: 0.8em;
+  max-height: 0.8em;
+}
+
+.profile-link svg {
+  height: 1em;
+}
+.displayNone {
+  display: none !important;
+}
+.logo a {
+  max-width: 152px !important;
+}
+
+.results:not(.compact) .resultset:not(.exchange) .details .btns {
+  justify-content: center;
+}
+
+/* ---------collapse items style---------------- */
+.collapsed .left,
+.collapsed .itemRendered,
+.collapsed .content,
+.collapsed .itemPopupAdditional,
+.collapsed .btns,
+.collapsed .price-label,
+.collapsed .bt-equivalent-pricings,
+.collapsed .currency-text span,
+.collapsed .price br,
+.collapsed .itemCardInfo,
+.collapsed .contact {
+  display: none !important;
+}
+.collapsed .price,
+.collapsed .info {
+  display: inline-block;
+}
+.collapsed .price {
+  float: left;
+  margin-left: 10px;
+  min-width: 10%;
+  min-height: 1em;
+}
+.collapsed .details .price > span {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.collapsed .info > small {
+  font-size: xx-small;
+}
+.collapsed .price img {
+  margin-top: 3px;
+  height: 28px !important;
+}
+.collapsed .sorted {
+  background: none !important;
+}
+.collapsed .itemName {
+  display: inline-block;
+}
+.collapsed .itemName .lc {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+.collapsed .info small {
+  display: block;
+}
+.collapsed .itemBoxContent {
+  height: 26.5px !important;
+  overflow: hidden;
+}
+.collapsed .textCurrency {
+  display: none;
+}
+.collapsed .details *:after,
+.collapsed .itemBoxContent *:after {
+  display: none !important;
+  content: none !important;
+}
+.collapsed {
+  cursor: pointer;
+  padding: 0px !important;
+}
+.collapsed .details {
+  display: inline-block !important;
+}
+.explanationText {
+  display: none;
+}
+.collapsed .explanationText {
+  max-height: 2em;
+  display: block;
+  padding: 0 0 0 10px;
+  width: 25%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+.collapsed .right {
+  padding: 0px !important;
+  display: flex;
+  width: 22% !important;
+}
+.collapsed .details {
+  width: 93%;
+  margin: 0px !important;
+}
+.collapsed .info {
+  margin: 0 0 0 10px !important;
+  padding: 0px !important;
+}
+/* The following rule makes sure nonpriced items' names don't
+line up weirdly. Might cause issues */
+.collapsed .collapseButton {
+  background-color: rgba(255, 255, 255, 0.15);
+  align-self: stretch;
+  width: 3%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z'/%3E%3C/svg%3E");
+}
+.collapsed {
+  opacity: 0.5 !important;
+}
+.collapsed:hover {
+  opacity: 0.8 !important;
+}
+.collapseButton {
+  border: 2px solid rgba(61, 61, 61, 0.8) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.9em;
+  max-height: 5em;
+}
+.uncollapsed .collapseButton {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: -8px;
+  align-self: baseline;
+  float: right;
+  width: 3%;
+  height: 1.8em;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath d='M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z'/%3E%3C/svg%3E");
+}
+.uncollapsed .right:not(.compact) {
+  width: 22% !important;
+}
+
+/* --------- div card collapse---------------- */
+
+.collapsed .divinationCard {
+  height: 2em;
+}
+.collapsed .divinationCard .itemBoxContent {
+  background-position: initial;
+}
+.collapsed .divinationCard .stackSize {
+  background-color: #2c2a2a;
+  border-radius: 5px;
+}
+
+/* --------- compact view -------------------- */
+
+.compact .collapsed .middle {
+  width: 51% !important;
+}
+.compact .collapsed .right {
+  width: 21% !important;
+}
+.compact .collapsed .info {
+  position: inherit !important;
+}
+.compact .collapsed .itemBoxContent {
+  padding-top: 0.9em;
+}
+.compact .collapsed .divinationCard .stackSize {
+  width: 3em;
+  text-align: center;
+}
+.compact .uncollapsed .right {
+  width: 97% !important;
+}
+.compact .uncollapsed .collapseButton {
+  align-self: end;
+}
+.two .uncollapsed .right {
+  float: right;
+  padding-left: 0px !important;
+}
+.two .uncollapsed .right .btns,
+.two .uncollapsed .right .price {
+  float: right;
+}
+.two .collapsed .right,
+.two .collapsed .explanationText {
+  align-self: baseline !important;
+}
+/* --------- popup style ---------------- */
+
+.hidden {
+  visibility: hidden;
+}
+#popupBackground {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup {
+  border: 2px solid #564f3a;
+  width: 40%;
+  background-color: rgb(12 12 12);
+  border-radius: 4px;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+}
+.popup .popupHeader {
+  display: flex;
+}
+.popupHeader button {
+  margin-left: auto;
+  background-color: #0a0a0a;
+  border: none;
+  width: 64px;
+  height: 64px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23636363;%7D%0A%3C/style%3E%3Cpath class='st0' d='M412.4,365.3L303,255.5l109.6-108.4c4.5-4.5,4.5-11.8,0-16.3l-31.2-31.3c-2.2-2.2-5.1-3.3-8.2-3.3 c-3.1,0-6,1.3-8.2,3.3L256,207.5l-109.3-108c-2.2-2.2-5.1-3.3-8.2-3.3c-3.1,0-6,1.3-8.2,3.3l-31.1,31.3c-4.5,4.5-4.5,11.8,0,16.3 l109.6,108.4L99.6,365.3c-2.2,2.2-3.4,5.1-3.4,8.2s1.2,6,3.4,8.2l31.2,31.3c2.3,2.3,5.2,3.4,8.2,3.4c2.9,0,5.9-1.1,8.2-3.4 L256,303.6l109,109.3c2.3,2.3,5.2,3.4,8.2,3.4c2.9,0,5.9-1.1,8.2-3.4l31.2-31.3c2.2-2.2,3.4-5.1,3.4-8.2 C415.8,370.4,414.5,367.5,412.4,365.3z'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 41px;
+}
+.popupHeader button:hover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #202020;
+}
+.popup h1 {
+  margin: 18px 10px 10px 23px;
+}
+.popup #explanationText {
+  margin: 18px 18px 10px 18px;
+}
+#secondaryField {
+  max-width: 100%;
+  min-height: 3em;
+  background-color: #202020;
+  margin: 10px 18px 20px 18px;
+  border-radius: 2px;
+  padding: 4px;
+}
+.popup .dropdownWrapper {
+  padding: 23px 10px 0px 18px;
+}
+.transcriptFieldWrapper {
+  margin: 18px 18px 2px 18px;
+}
+#transcriptField {
+  padding: 4px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 6em;
+  background-color: rgb(32, 32, 32);
+  border-radius: 2px;
+  margin-left: 1px;
+  border: 1px solid rgb(133, 133, 133);
+}
+.popup select {
+  background-color: rgb(32, 32, 32);
+  margin-left: 4px;
+}
+#reportButton {
+  background-color: #0f304d;
+  border-color: #4c4c7d;
+  color: #e2e2e2;
+  line-height: 16px;
+  min-height: 34px;
+  min-width: 34px;
+  margin: 18px;
+}
+.proofWrapper {
+  padding: 14px 19px 0px 19px;
+}
+#proof {
+  background-color: rgb(32, 32, 32);
+  width: 100%;
+  padding: 4px;
+  border-radius: 2px;
+  border: 1px solid rgb(133, 133, 133);
+  margin-left: 1px;
+}
+.popup a {
+  color: rgb(179 124 30);
+}
+.popup #errorText {
+  margin: 0px 18px;
+  color: #86bad5;
+}
+.popup #errorText a {
+  color: rgb(205 172 38);
+}
+#transcriptField,
+#proof,
+#blacklistReasonDropdown {
+  outline: none;
+}
+#blacklistReasonDropdown {
+  border: 1px solid rgb(133, 133, 133);
+}
+#transcriptField:focus,
+#proof:focus,
+#blacklistReasonDropdown:focus {
+  border: 1px solid rgb(187, 187, 187);
+}
+.buttonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 17px 10px 17px;
+}
+.buttonWrapper.alignLeft {
+  justify-content: flex-start;
+}
+.buttonWrapper.alignCenter {
+  justify-content: center;
+}
+.modalOptionButton {
+  padding: 6px 9px;
+  margin: 5px;
+  cursor: pointer;
+  background: #3e3e3e;
+  color: #dbd4be;
+  border-radius: 2px;
+  border: none;
+}
+.modalOptionButton:hover {
+  background: #505050;
+}
+.modalOptionButton:focus {
+  background-color: #6e6e6e;
+}
+
+/* ------------ exchange ------------ */
+
+.exchange .price small {
+  display: none;
+}
+.exchange .collapsed .price {
+  min-width: 100%;
+}
+.exchange .uncollapsed .contact {
+  width: 97% !important;
+}
+.exchange .uncollapsed .collapseButton {
+  align-self: baseline;
+}
+.exchange .uncollapsed .contact + .collapseButton {
+  align-self: end;
+}
+
+/* --------- warning on item -------- */
+
+.results .warning:nth-child(odd) {
+  background-color: rgb(52 7 7 / 80%) !important;
+}
+.results .warning:nth-child(even) {
+  background-color: rgb(68 9 9 / 80%) !important;
+}
+.results .warning .contact {
+  background-color: rgb(68 9 9 / 80%) !important;
+}
+
+.results .pricefixWarning:nth-child(odd) {
+  background-color: rgb(41 30 5 / 80%) !important;
+}
+.results .pricefixWarning:nth-child(even) {
+  background-color: rgb(47 35 6 / 80%) !important;
+}
+.results .pricefixWarning .contact {
+  background-color: rgb(47 35 6 / 80%) !important;
+}
+.results .pricefixWarning .contact textarea,
+.results .warning .contact textarea {
+  background-color: rgba(34 34 34 / 0.33) !important;
+}
+
+/* -------------------- TFT injected menu style --------------------- */
+
+body {
+  --menu-width: 340px;
+}
+
+#TFT-trade-container {
+  position: fixed;
+  width: 0px;
+  transition: left 0.2s ease 0s;
+  top: 0px;
+  bottom: 0px;
+  background-color: transparent;
+  z-index: 1001;
+}
+
+.rightContainerOverwrite {
+  right: 0px;
+}
+
+#TFT-trade-container.openMenu {
+  width: var(--menu-width);
+}
+
+#app .openMenu {
+  float: right;
+  width: calc(100% - var(--menu-width)) !important;
+  transition: width 0.2s ease 0s;
+}
+
+/* #app > .content { */
+/*   float: right ; */
+/*   transition: width 0.2s ease 0s; */
+/* } */
+
+.rightContentOverwrite {
+  float: left !important;
+}
+
+.openMenu .OpenButton {
+  display: none;
+}
+.MenuContainer {
+  max-width: 0px;
+}
+.openMenu .MenuContainer {
+  max-width: var(--menu-width);
+}
+
+/* -------------------- price conversion --------------------- */
+
+.results:not(.compact) .priceConversion {
+  padding: 6px 8px 2px 8px !important;
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+.priceConversion img {
+  padding-left: 2px;
+  width: 1.3em !important;
+  height: 1.3em !important;
+}
+
+.collapsed .priceConversion {
+  display: none !important;
+}
+
+/* --------------- show IGN and account name ----------------- */
+
+.results:not(.compact) .resultset:not(.exchange) .showName .character-name {
+  display: block !important;
+}
+
+.results.compact .resultset:not(.exchange) .showName .profile-link {
+  display: inline-block !important;
+}
+
+.pull-left {
+  height: initial !important;
+}
+
+.results:not(.compact) .resultset:not(.exchange) .showName .pull-left {
+  width: 100%;
+}
+.results:not(.compact) .resultset:not(.exchange) .showName .character-name {
+  margin: 5px;
+}
+
+.showName .character-name {
+  color: #eadeb7;
+}
+
+.results.compact .showName .character-name {
+  margin-right: 5px !important;
+}
+
+.results:not(.compact) .resultset:not(.exchange) .showName .status {
+  margin-right: 9px;
+  margin-bottom: 4px;
+}
+
+.results.compact .resultset:not(.exchange) .showName .status {
+  margin-right: 6px;
+  margin-left: 3px;
+}
+
+/* fix for base percentiles overlapping  */
+.results.compact .info.s {
+  display: flex;
+  align-items: center;
+}
+
+.results.compact .info.s .TFTTimestamp {
+  margin-left: 10px;
+}
+
+
+.results.compact.two .linkContainer {
+  left: calc(50% - 20px) !important;
+}
+
+.results.compact .linkContainer {
+  left: calc(40%) !important;
+}
+
+/* ------------- wiki, coe and poedb link on item -------------- */
+
+.linkContainer a {
+  margin: 0 1px;
+  background-color: #313333d1;
+  border: 1px solid #8d8d8f;
+  text-decoration: none !important;
+  font-size: 0.4em;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  float: right;
+  opacity: 0.4;
+  transition: all 0.1s ease-in;
+  height: 18px;
+  width: 18px;
+}
+
+.linkContainer:hover a {
+  opacity: 0.65;
+}
+
+.linkContainer a:hover {
+  opacity: 1;
+}
+
+.linkWrapper {
+  display: flex;
+  float: right;
+}
+.linkWrapperWrapper {
+  width: 80px;
+  position: absolute;
+}
+.linkContainer {
+  display: block;
+  position: relative;
+  left: calc(50% - 84px);
+  z-index: 5;
+}
+
+.compact .divinationCard .linkContainer {
+  width: 55%;
+  margin-top: 0;
+}
+
+.divinationCard .linkContainer {
+  position: absolute;
+  width: 90%;
+  margin-top: 137%;
+}
+
+.divinationCard .linkContainer a {
+  opacity: 0.7;
+}
+.divinationCard .linkContainer:hover a {
+  opacity: 0.85;
+}
+.divinationCard .linkContainer a:hover {
+  opacity: 1;
+}
+
+.compact .divinationCard .linkContainer a {
+  opacity: 0.4;
+}
+.compact .divinationCard .linkContainer:hover a {
+  opacity: 0.65;
+}
+.compact .divinationCard .linkContainer a:hover {
+  opacity: 1;
+}
+
+.collapsed .linkContainer {
+  display: none;
+}
+
+/* --------------------- timeStamp -------------------- */
+
+.TFTTimestamp {
+  color: #aa9e8271;
+  font-size: smaller;
+}
+
+.info:hover .TFTTimestamp {
+  color: #aa9e82;
+}
+
+.collapsed .TFTTimestamp {
+  display: none;
+}
+
+/*---------------------- max sockets ------------------- */
+
+.TFTMaxSockets {
+  background: #ff000040;
+  padding: 5px 2px 4px 2px;
+  color: darkgrey;
+  border: 1px solid #957b7b3d;
+}
+
+.TFTMaxSocketsWarn {
+  background: #5c5c5c14;
+  padding: 5px 16px;
+  opacity: 0.3;
+  transition: opacity 0.12s ease-in;
+}
+
+.itemRendered:hover .TFTMaxSocketsWarn {
+  opacity: 0.5;
+  transition: opacity 0.12s ease-in;
+}
+
+.TFTMaxSocketsWarn:hover {
+  opacity: 0.95 !important;
+  transition: opacity 0.12s ease-in;
+}
+
+/*---------------------- sweetAlert ------------------- */
+
+.swal2-popup {
+  padding-left: 1.5em !important;
+}
+
+.defaultToast {
+  background: #303030 !important;
+  color: #cfcfcf !important;
+}
+
+/*------------------------- toastr -------------------- */
+
+#toast-container > div {
+  box-shadow: none !important;
+  padding: 14px 14px 14px 48px !important;
+}
+
+#toast-container > div.toast-error {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGYSURBVEhL5ZSvTsNQFMbXZGICMYGYmJhAQIJAICYQPAACiSDB8AiICQQJT4CqQEwgJvYASAQCiZiYmJhAIBATCARJy+9rTsldd8sKu1M0+dLb057v6/lbq/2rK0mS/TRNj9cWNAKPYIJII7gIxCcQ51cvqID+GIEX8ASG4B1bK5gIZFeQfoJdEXOfgX4QAQg7kH2A65yQ87lyxb27sggkAzAuFhbbg1K2kgCkB1bVwyIR9m2L7PRPIhDUIXgGtyKw575yz3lTNs6X4JXnjV+LKM/m3MydnTbtOKIjtz6VhCBq4vSm3ncdrD2lk0VgUXSVKjVDJXJzijW1RQdsU7F77He8u68koNZTz8Oz5yGa6J3H3lZ0xYgXBK2QymlWWA+RWnYhskLBv2vmE+hBMCtbA7KX5drWyRT/2JsqZ2IvfB9Y4bWDNMFbJRFmC9E74SoS0CqulwjkC0+5bpcV1CZ8NMej4pjy0U+doDQsGyo1hzVJttIjhQ7GnBtRFN1UarUlH8F3xict+HY07rEzoUGPlWcjRFRr4/gChZgc3ZL2d8oAAAAASUVORK5CYII=") !important;
+}
+
+.toast-warning,
+.toast-error {
+  opacity: 0.88 !important;
+}
+
+/*---------------------- forum warnings ------------------- */
+
+/* warning on forum post */
+.posted-by.blacklisted .profile-link svg,
+.posted-by.priceFixer .profile-link svg {
+  transform: translate(0px, 2px);
+}
+
+.priceFixer > h1:nth-of-type(1),
+.priceFixer > h2:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+}
+
+.priceFixer > h1 > svg,
+.priceFixer > h2 > svg {
+  margin: 0px 3px;
+  max-width: 0.8em;
+  max-height: 0.8em;
+}

@@ -1,0 +1,2 @@
+#ignore webpack files
+webpack.*.js
